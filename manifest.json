@@ -1,0 +1,47 @@
+{
+  "name": "二十四节气 · 开放世界",
+  "short_name": "节气世界",
+  "description": "探索一个随着二十四节气变化的3D开放世界——从立春到大寒，体验四季轮回中的农耕、探索和冒险。",
+  "start_url": "/projects/solar-terms-game/index.html",
+  "scope": "/projects/solar-terms-game/",
+  "display": "standalone",
+  "orientation": "landscape",
+  "theme_color": "#0a0a14",
+  "background_color": "#0a0a14",
+  "categories": ["games", "entertainment", "education"],
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/gameplay-spring.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "label": "春日耕种"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "开始游戏",
+      "short_name": "开始",
+      "description": "直接进入游戏世界",
+      "url": "/projects/solar-terms-game/index.html",
+      "icons": [{ "src": "icons/play-96.png", "sizes": "96x96" }]
+    }
+  ]
+}

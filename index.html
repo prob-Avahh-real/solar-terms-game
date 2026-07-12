@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, shrink-to-fit=no">
+  <title>节气世界</title>
+  <meta name="description" content="二十四节气3D开放世界 — 原生移动游戏">
+  <meta name="theme-color" content="#0a0a14">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="节气世界">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="icons/icon-512.png">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Capacitor polyfill: prevents status bar overlay on iOS -->
+  <meta name="capacitor-status-bar-overlays-webview" content="true">
+
+  <link rel="stylesheet" href="css/style.css">
+  <style>body{background:#0a0a14;margin:0;overflow:hidden}</style>
+
+  <!-- Capacitor core (bundled inline if needed; CDN fallback) -->
+  <script>
+    // Polyfill window.Capacitor for environments where it's not injected
+    if (typeof window.Capacitor === 'undefined') {
+      window.Capacitor = {
+        isNativePlatform: () => false,
+        getPlatform: () => 'web',
+        isPluginAvailable: () => false
+      };
+    }
+  </script>
+</head>
+<body>
+  <div id="loading-screen">
+    <div class="loading-content">
+      <div class="loading-title">二十四节气 · 开放世界</div>
+      <div class="loading-bar-container">
+        <div class="loading-bar" style="width:0%"></div>
+      </div>
+      <div class="loading-text">加载引擎中...</div>
+    </div>
+  </div>
+
+  <div id="install-prompt" class="popup hidden" style="top:20%;pointer-events:auto;cursor:pointer;">
+    <div style="font-size:16px;margin-bottom:8px;">📲 安装到主屏幕</div>
+    <div style="font-size:13px;color:rgba(255,255,255,0.7);">获得原生App体验</div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+
+  <noscript>
+    <div style="position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;text-align:center;font-family:sans-serif;">
+      <h1>🌏 节气世界</h1>
+      <p>请启用 JavaScript</p>
+      <p style="color:#FFD700;">Enable JavaScript to play</p>
+    </div>
+  </noscript>
+</body>
+</html>
