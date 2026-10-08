@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "dev": "python3 -m http.server 8080",
-    "sync": "npx cap sync",
+    "build": "node scripts/build-web.cjs",
+    "test": "node --test test/*.test.js",
+    "sync": "npm run build && npx cap sync",
     "ios": "npx cap open ios",
     "android": "npx cap open android",
     "run:ios": "npx cap run ios",

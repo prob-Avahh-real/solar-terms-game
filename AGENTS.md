@@ -1,11 +1,21 @@
 # AGENTS.md — solar-terms-game
 
-Web 项目。
+二十四节气开放世界 · Capacitor 移动游戏（归档）。
 
-## 运行
+## 命令
+
 ```bash
-open index.html   # 浏览器直接打开
+npm install
+npm run build          # → www/
+npm test
+npx cap sync android
 ```
 
-## 技术栈
-HTML / CSS / JavaScript
+## 平台
+
+- Android：`android/`（CI 矩阵 `solar-terms-game`）
+- Web：`index.html` / `www/`
+
+## Harness / Loop
+
+遵循根 `/Users/skat/AGENTS.md`。Done：`npm test` + `npm run build` + `android/` 可 sync。
