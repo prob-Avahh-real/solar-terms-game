@@ -11,10 +11,12 @@ npm test
 npx cap sync android
 ```
 
-## 平台
+## 用途与 Target 判定
 
-- Android：`android/`（CI 矩阵 `solar-terms-game`）
-- Web：`index.html` / `www/`
+| 平台 | 需要? | 方式 |
+|------|-------|------|
+| 移动端 | 需要 | Capacitor Android（`android/`，CI 矩阵 `solar-terms-game`） |
+| 智能硬件 | 可选 | 二十四节气农场触屏经营为主，穿戴输入可选（已归档搁置） |
 
 ## Harness / Loop
 
